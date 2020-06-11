@@ -15973,6 +15973,153 @@
         ]
     },
     {
+        "name": "magepal/magento2-gmailsmtpapp",
+        "version": "2.8.1",
+        "version_normalized": "2.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/magepal/magento2-gmail-smtp-app.git",
+            "reference": "ffce9beab9cf0c1ba535558d5d43ac4080971aaa"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/magepal/magento2-gmail-smtp-app/zipball/ffce9beab9cf0c1ba535558d5d43ac4080971aaa",
+            "reference": "ffce9beab9cf0c1ba535558d5d43ac4080971aaa",
+            "shasum": ""
+        },
+        "require": {
+            "magento/framework": "100.0.*|100.1.*|101.0.*|102.0.*",
+            "magento/module-backend": "100.0.*|100.1.*|100.2.*|101.0.*",
+            "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.1.3|~7.2.0|~7.3.0"
+        },
+        "time": "2020-03-30T18:51:32+00:00",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "MagePal\\GmailSmtpApp\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "proprietary"
+        ],
+        "authors": [
+            {
+                "name": "Renon Stewart",
+                "email": "renon@magepal.com",
+                "homepage": "http://www.magepal.com/",
+                "role": "Leader"
+            }
+        ],
+        "description": "Magento 2 SMTP Extension - Configure Magento 2 to send all transactional email using Gmail, G Suite, Amazon SES, Office360, Mailgun, SendGrid, Mandrill or any other SMTP servers",
+        "homepage": "https://www.magepal.com/",
+        "keywords": [
+            "Amazon SES",
+            "Amazon Simple Email Service",
+            "g suite",
+            "gmail smtp",
+            "google app",
+            "how to configure magento email",
+            "how to setup email magento2",
+            "magento 2",
+            "magento2 email",
+            "magento2 email setup",
+            "magento2 smtp",
+            "send email magento2"
+        ],
+        "funding": [
+            {
+                "url": "https://www.magepal.com/custom-smtp.html?utm_source=smtp&utm_medium=github%20sponsor",
+                "type": "custom"
+            }
+        ]
+    },
+    {
+        "name": "mageplaza/magento-2-vietnamese-language-pack",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mageplaza/magento-2-vietnamese-language-pack.git",
+            "reference": "1075e51dadf3290fb8e5be5368ffcf832b67f9f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mageplaza/magento-2-vietnamese-language-pack/zipball/1075e51dadf3290fb8e5be5368ffcf832b67f9f0",
+            "reference": "1075e51dadf3290fb8e5be5368ffcf832b67f9f0",
+            "shasum": ""
+        },
+        "require": {
+            "mageplaza/module-core": "^1.3.13"
+        },
+        "time": "2020-02-11T03:59:34+00:00",
+        "type": "magento2-language",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mageplaza team",
+                "email": "hi@mageplaza.com",
+                "homepage": "https://www.mageplaza.com",
+                "role": "Leader"
+            }
+        ],
+        "description": "Vietnamese language package for Magento 2",
+        "homepage": "https://www.mageplaza.com"
+    },
+    {
+        "name": "mageplaza/module-core",
+        "version": "1.4.8",
+        "version_normalized": "1.4.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mageplaza/module-core.git",
+            "reference": "aa99d5aa974ec9bf799bcc9a2137095baf882093"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mageplaza/module-core/zipball/aa99d5aa974ec9bf799bcc9a2137095baf882093",
+            "reference": "aa99d5aa974ec9bf799bcc9a2137095baf882093",
+            "shasum": ""
+        },
+        "time": "2019-12-23T03:04:13+00:00",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "Mageplaza\\Core\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "proprietary"
+        ],
+        "authors": [
+            {
+                "name": "Mageplaza",
+                "email": "support@mageplaza.com",
+                "homepage": "https://www.mageplaza.com",
+                "role": "Technical Support"
+            }
+        ],
+        "description": "Mageplaza Core for Magento 2"
+    },
+    {
         "name": "mikey179/vfsstream",
         "version": "v1.6.8",
         "version_normalized": "1.6.8.0",

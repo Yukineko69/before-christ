@@ -6,6 +6,62 @@
  */
 
 var config = {
+    map: {
+        '*': {
+            'rowBuilder':             'Magento_Theme/js/row-builder',
+            'toggleAdvanced':         'mage/toggle',
+            'translateInline':        'mage/translate-inline',
+            'sticky':                 'mage/sticky',
+            'tabs':                   'mage/tabs',
+            'zoom':                   'mage/zoom',
+            'collapsible':            'mage/collapsible',
+            'dropdownDialog':         'mage/dropdown',
+            'dropdown':               'mage/dropdowns',
+            'accordion':              'mage/accordion',
+            'loader':                 'mage/loader',
+            'tooltip':                'mage/tooltip',
+            'deletableItem':          'mage/deletable-item',
+            'itemTable':              'mage/item-table',
+            'fieldsetControls':       'mage/fieldset-controls',
+            'fieldsetResetControl':   'mage/fieldset-controls',
+            'redirectUrl':            'mage/redirect-url',
+            'loaderAjax':             'mage/loader',
+            'menu':                   'mage/menu',
+            'popupWindow':            'mage/popup-window',
+            'validation':             'mage/validation/validation',
+            'welcome':                'Magento_Theme/js/view/welcome',
+            'breadcrumbs':            'Magento_Theme/js/view/breadcrumbs',
+            'criticalCssLoader':      'Magento_Theme/js/view/critical-css-loader',
+            'jquery/ui':              'jquery/compat'
+        }
+    },
+    deps: [
+        'jquery/jquery.mobile.custom',
+        'mage/common',
+        'mage/dataPost',
+        'mage/bootstrap'
+    ],
+    config: {
+        mixins: {
+            'Magento_Theme/js/view/breadcrumbs': {
+                'Magento_Theme/js/view/add-home-breadcrumb': true
+            },
+            'jquery/ui-modules/dialog': {
+                'jquery/patches/jquery-ui': true
+            }
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
     'waitSeconds': 0,
     'map': {
         '*': {
@@ -67,62 +123,6 @@ require(['jquery'], function ($) {
 
     $.noConflict();
 });
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            'rowBuilder':             'Magento_Theme/js/row-builder',
-            'toggleAdvanced':         'mage/toggle',
-            'translateInline':        'mage/translate-inline',
-            'sticky':                 'mage/sticky',
-            'tabs':                   'mage/tabs',
-            'zoom':                   'mage/zoom',
-            'collapsible':            'mage/collapsible',
-            'dropdownDialog':         'mage/dropdown',
-            'dropdown':               'mage/dropdowns',
-            'accordion':              'mage/accordion',
-            'loader':                 'mage/loader',
-            'tooltip':                'mage/tooltip',
-            'deletableItem':          'mage/deletable-item',
-            'itemTable':              'mage/item-table',
-            'fieldsetControls':       'mage/fieldset-controls',
-            'fieldsetResetControl':   'mage/fieldset-controls',
-            'redirectUrl':            'mage/redirect-url',
-            'loaderAjax':             'mage/loader',
-            'menu':                   'mage/menu',
-            'popupWindow':            'mage/popup-window',
-            'validation':             'mage/validation/validation',
-            'welcome':                'Magento_Theme/js/view/welcome',
-            'breadcrumbs':            'Magento_Theme/js/view/breadcrumbs',
-            'criticalCssLoader':      'Magento_Theme/js/view/critical-css-loader',
-            'jquery/ui':              'jquery/compat'
-        }
-    },
-    deps: [
-        'jquery/jquery.mobile.custom',
-        'mage/common',
-        'mage/dataPost',
-        'mage/bootstrap'
-    ],
-    config: {
-        mixins: {
-            'Magento_Theme/js/view/breadcrumbs': {
-                'Magento_Theme/js/view/add-home-breadcrumb': true
-            },
-            'jquery/ui-modules/dialog': {
-                'jquery/patches/jquery-ui': true
-            }
-        }
-    }
-};
 
 require.config(config);
 })();
@@ -992,6 +992,48 @@ var config = {
                 'Magento_PaypalReCaptcha/js/payflowpro-method-mixin': true
             }
         }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Mageplaza
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the mageplaza.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.mageplaza.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Mageplaza
+ * @package     Mageplaza_Core
+ * @copyright   Copyright (c) Mageplaza (https://www.mageplaza.com/)
+ * @license     https://www.mageplaza.com/LICENSE.txt
+ */
+
+var config = {
+    paths: {
+        'mageplaza/core/jquery/popup': 'Mageplaza_Core/js/jquery.magnific-popup.min',
+        'mageplaza/core/owl.carousel': 'Mageplaza_Core/js/owl.carousel.min',
+        'mageplaza/core/bootstrap': 'Mageplaza_Core/js/bootstrap.min',
+        mpIonRangeSlider: 'Mageplaza_Core/js/ion.rangeSlider.min',
+        touchPunch: 'Mageplaza_Core/js/jquery.ui.touch-punch.min',
+        mpDevbridgeAutocomplete: 'Mageplaza_Core/js/jquery.autocomplete.min'
+    },
+    shim: {
+        "mageplaza/core/jquery/popup": ["jquery"],
+        "mageplaza/core/owl.carousel": ["jquery"],
+        "mageplaza/core/bootstrap": ["jquery"],
+        mpIonRangeSlider: ["jquery"],
+        mpDevbridgeAutocomplete: ["jquery"],
+        touchPunch: ['jquery', 'jquery/ui']
     }
 };
 

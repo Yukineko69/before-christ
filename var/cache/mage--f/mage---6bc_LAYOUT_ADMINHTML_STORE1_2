@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1591547048;s:6:"expire";i:9999999999;s:4:"tags";s:37:"6bc_LAYOUT_GENERAL_CACHE_TAG,6bc_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1591877848;s:6:"expire";i:9999999999;s:4:"tags";s:37:"6bc_LAYOUT_GENERAL_CACHE_TAG,6bc_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="adminhtml_dashboard_index"><body>
    <referenceContainer name="content">
@@ -8125,6 +8125,25 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1591547048;s:6:"expire";i:9999999999;s:4:"t
             </argument>
          </arguments>
       </block>
+   </referenceContainer>
+</body>
+</handle><layout id="magepalsmtp_validateconfig_index"><container name="root">
+   <block class="MagePal\GmailSmtpApp\Block\Adminhtml\ValidateConfig" name="magepal.smtp_validate" template="MagePal_GmailSmtpApp::validateConfig/result.phtml"/>
+</container>
+</layout><handle id="adminhtml_system_config_edit"><head>
+   <script src="Mageplaza_Core::js/jscolor.min.js"/>
+</head>
+</handle><handle id="mp_font_awesome"><head>
+   <css src="https://use.fontawesome.com/releases/v5.10.1/css/all.css" src_type="url"/>
+</head>
+</handle><handle id="widget_selectwidget_index"><head>
+   <title>
+            Select your widget
+        </title>
+</head>
+<body>
+   <referenceContainer name="content">
+      <block class="Tawk\Widget\Block\Adminhtml\SelectWidgetBlock" name="tawk_widget.select" template="Tawk_Widget::selectwidget.phtml"/>
    </referenceContainer>
 </body>
 </handle><layout id="sales_order_addcomment"><referenceContainer name="root">

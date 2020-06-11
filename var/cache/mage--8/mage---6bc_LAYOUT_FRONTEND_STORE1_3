@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1591547095;s:6:"expire";i:9999999999;s:4:"tags";s:37:"6bc_LAYOUT_GENERAL_CACHE_TAG,6bc_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1591877666;s:6:"expire";i:9999999999;s:4:"tags";s:37:"6bc_LAYOUT_GENERAL_CACHE_TAG,6bc_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6992,6 +6992,14 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1591547095;s:6:"expire";i:9999999999;s:4:"t
       </arguments>
    </referenceBlock>
 </body>
+</handle><handle id="mp_font_awesome"><head>
+   <css src="https://use.fontawesome.com/releases/v5.10.1/css/all.css" src_type="url"/>
+</head>
+</handle><handle id="default"><body>
+   <referenceContainer name="before.body.end">
+      <block class="Tawk\Widget\Block\Embed" name="tawk_widget.embed" template="embed.phtml"/>
+   </referenceContainer>
+</body>
 </handle><handle id="checkout_cart_index"><body>
    <referenceBlock name="checkout.cart.totals">
       <arguments>
@@ -7129,7 +7137,45 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1591547095;s:6:"expire";i:9999999999;s:4:"t
       <argument name="viewModel" xsi:type="object">Vertex\AddressValidation\ViewModel\CustomerAddressValidation</argument>
    </arguments>
 </block>
-</layout><handle id="checkout_onepage_success"><body>
+</layout><handle id="checkout_index_index"><body>
+   <referenceBlock name="checkout.root">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="checkout" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="steps" xsi:type="array">
+                        <item name="children" xsi:type="array">
+                           <item name="billing-step" xsi:type="array">
+                              <item name="children" xsi:type="array">
+                                 <item name="payment" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                       <item name="renders" xsi:type="array">
+                                          <item name="children" xsi:type="array">
+                                             <item name="vnpay-payments" xsi:type="array">
+                                                <item name="component" xsi:type="string">Vnpayment_VNPAY/js/view/payment/vnpay</item>
+                                                <item name="methods" xsi:type="array">
+                                                   <item name="vnpay" xsi:type="array">
+                                                      <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
+                                                   </item>
+                                                </item>
+                                             </item>
+                                          </item>
+                                       </item>
+                                    </item>
+                                 </item>
+                              </item>
+                           </item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+</handle><handle id="checkout_onepage_success"><body>
    <referenceContainer name="order.success.additional.info">
       <block class="Yotpo\Yotpo\Block\Conversion" name="yotpo_conversion" template="Yotpo_Yotpo::conversion.phtml" cacheable="false" ifconfig="yotpo/settings/active"/>
    </referenceContainer>

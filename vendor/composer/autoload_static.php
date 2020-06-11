@@ -307,12 +307,15 @@ class ComposerStaticInit4e78f2c40519208992e39240b68ed863
         '2451819c9c2b818eb9be5f36b51585ea' => __DIR__ . '/..' . '/magento/module-wishlist-graph-ql/registration.php',
         'd04d5084d3db908d3544ed506541866a' => __DIR__ . '/..' . '/magento/theme-adminhtml-backend/registration.php',
         '7102f9cf0d2c08bc731a7e185c1c8bfc' => __DIR__ . '/..' . '/magento/theme-frontend-luma/registration.php',
+        '6b5b87bda6fedcf6ef8605219c8b67f2' => __DIR__ . '/..' . '/mageplaza/module-core/registration.php',
         'aa99edf9b0e88f2dccf8ffaddff1ce2b' => __DIR__ . '/..' . '/msp/twofactorauth/registration.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         '2a3c2110e8e0295330dc3d11a4cbc4cb' => __DIR__ . '/..' . '/php-webdriver/webdriver/lib/Exception/TimeoutException.php',
         'aa75ea0761a2f40c1f3b32ad314f86c4' => __DIR__ . '/..' . '/phpseclib/mcrypt_compat/lib/mcrypt.php',
         'eda65932675b68b5aee4503e0762d64d' => __DIR__ . '/..' . '/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/_bootstrap.php',
+        '0ba5079bc0aa31645404935d16e5e118' => __DIR__ . '/..' . '/magepal/magento2-gmailsmtpapp/registration.php',
+        'fafc74b18998cb7256cedcfe0ee5fcb3' => __DIR__ . '/..' . '/mageplaza/magento-2-vietnamese-language-pack/registration.php',
         'b4cf39431a4b949eea8aa69ebb3d39da' => __DIR__ . '/../..' . '/app/etc/NonComposerComponentRegistration.php',
     );
 
@@ -413,6 +416,7 @@ class ComposerStaticInit4e78f2c40519208992e39240b68ed863
         array (
             'MyCLabs\\Enum\\' => 13,
             'Monolog\\' => 8,
+            'Mageplaza\\Core\\' => 15,
             'Magento\\Wishlist\\' => 17,
             'Magento\\WishlistGraphQl\\' => 24,
             'Magento\\WishlistAnalytics\\' => 26,
@@ -660,6 +664,7 @@ class ComposerStaticInit4e78f2c40519208992e39240b68ed863
             'Magento\\AdminAnalytics\\' => 23,
             'Magento\\' => 8,
             'Magento2\\' => 9,
+            'MagePal\\GmailSmtpApp\\' => 21,
             'MSP\\TwoFactorAuth\\' => 18,
             'MSP\\ReCaptcha\\' => 14,
             'MFTF\\' => 5,
@@ -1027,6 +1032,10 @@ class ComposerStaticInit4e78f2c40519208992e39240b68ed863
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Mageplaza\\Core\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mageplaza/module-core',
         ),
         'Magento\\Wishlist\\' => 
         array (
@@ -2016,6 +2025,10 @@ class ComposerStaticInit4e78f2c40519208992e39240b68ed863
         'Magento2\\' => 
         array (
             0 => __DIR__ . '/..' . '/magento/magento-coding-standard/Magento2',
+        ),
+        'MagePal\\GmailSmtpApp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/magepal/magento2-gmailsmtpapp',
         ),
         'MSP\\TwoFactorAuth\\' => 
         array (
